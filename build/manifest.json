@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "target": "browser",
+  "runtimeVersion": "0.6.0",
+  "project": {
+    "id": "id_mvr47wcg_2j",
+    "name": "Data Processor 2000"
+  },
+  "inventory": {
+    "modules": 2,
+    "forms": 1,
+    "controls": 7,
+    "menus": 0,
+    "assets": 0,
+    "resources": 0,
+    "virtualFiles": 0,
+    "references": 0
+  },
+  "dependencies": [],
+  "diagnostics": [],
+  "entry": "index.html",
+  "files": [
+    {
+      "path": "app.css",
+      "bytes": 558040,
+      "sha256": "991657ff8bdd2c0c810fd4620b63d05f807a694c1e5c7c870db1cc4384b45d33"
+    },
+    {
+      "path": "bootstrap.js",
+      "bytes": 5258,
+      "sha256": "acb90d24aaaa842e226ab121cd3e6e0547e2c6cdea8484a7dcd2a365ef66ec5c"
+    },
+    {
+      "path": "index.html",
+      "bytes": 11923,
+      "sha256": "5a92601a0ed2745ab8be5d81b6710571866f32c441699e3671d17dc92fe64def"
+    },
+    {
+      "path": "runtime.js",
+      "bytes": 3099829,
+      "sha256": "990a084ac3c140fd85fc8d1b718418851c319fa8f94fa6663b39a9e746685f65"
+    }
+  ],
+  "buildId": "14e9f1cd3f4e39392e82f7cd7705ec33d5f078891fcca776ef12c45520285450",
+  "offline": null
+}
