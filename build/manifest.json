@@ -9,7 +9,7 @@
   "inventory": {
     "modules": 2,
     "forms": 1,
-    "controls": 7,
+    "controls": 14,
     "menus": 0,
     "assets": 0,
     "resources": 0,
@@ -17,13 +17,40 @@
     "references": 0
   },
   "dependencies": [],
-  "diagnostics": [],
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "code": "EXPORT_OFFLINE_STATIC_ONLY",
+      "message": "Offline mode caches packaged static files only. Remote services, dynamic requests and native adapters still need their normal host/network.",
+      "path": "deployment.offline"
+    }
+  ],
   "entry": "index.html",
   "files": [
+    {
+      "path": "app-icon-192.png",
+      "bytes": 147726,
+      "sha256": "70cbc6026e1194d15dd7b5610c45744d11cdb6f50d499358a4d264b311644015"
+    },
+    {
+      "path": "app-icon-512.png",
+      "bytes": 1049236,
+      "sha256": "80d707ccc0ab2606ae04f05922fcd13e839b291243dec70bcd8d7bec76c8fb10"
+    },
+    {
+      "path": "app-icon.svg",
+      "bytes": 337,
+      "sha256": "df6448c799e38870f47868504e31703c3a96dd3e8436fd6c66699a50d5e80203"
+    },
     {
       "path": "app.css",
       "bytes": 558040,
       "sha256": "991657ff8bdd2c0c810fd4620b63d05f807a694c1e5c7c870db1cc4384b45d33"
+    },
+    {
+      "path": "app.webmanifest",
+      "bytes": 538,
+      "sha256": "1afe49b06e203bc41a02f8af77d39f3d8eb7a68b6baa68a08e7424e996491fa5"
     },
     {
       "path": "bootstrap.js",
@@ -32,15 +59,41 @@
     },
     {
       "path": "index.html",
-      "bytes": 11923,
-      "sha256": "5a92601a0ed2745ab8be5d81b6710571866f32c441699e3671d17dc92fe64def"
+      "bytes": 21375,
+      "sha256": "747d42f6296194aa2fef79c2275f217f29c248eccf02da76e771930070883360"
+    },
+    {
+      "path": "offline-register.js",
+      "bytes": 2580,
+      "sha256": "c17614276f8578b32b64850294c31d6f3344cbbc20d27e8167add0e7e5e335bb"
     },
     {
       "path": "runtime.js",
       "bytes": 3099829,
       "sha256": "990a084ac3c140fd85fc8d1b718418851c319fa8f94fa6663b39a9e746685f65"
+    },
+    {
+      "path": "service-worker.js",
+      "bytes": 5704,
+      "sha256": "9028b0f985a9f3d9ec96d019db386287241ed85c5e321738aff43162defaf02b"
     }
   ],
-  "buildId": "14e9f1cd3f4e39392e82f7cd7705ec33d5f078891fcca776ef12c45520285450",
-  "offline": null
+  "buildId": "e5534017e806565f1c14fc3cad2051d0f14a3909170c14f8dea57036212ae598",
+  "offline": {
+    "scope": "./",
+    "entry": "index.html",
+    "cacheVersion": "05bbb3fb371fa5cdb46200bbd12bd4fd6de9c3ecd7c5e979fd90fc9c95bb8216",
+    "files": [
+      "app-icon-192.png",
+      "app-icon-512.png",
+      "app-icon.svg",
+      "app.css",
+      "app.webmanifest",
+      "bootstrap.js",
+      "index.html",
+      "offline-register.js",
+      "runtime.js"
+    ],
+    "policy": "verified-static-only"
+  }
 }
