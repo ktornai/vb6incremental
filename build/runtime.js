@@ -24441,7 +24441,7 @@ class VirtualMachine extends Signal {
   async checkpoint(ins,frame){
     if(this.state==='stopped')throw new StopExecution();
     if(this.debugEvaluation){await this.debugEvaluation.checkpoint();return;}
-    this.instructionCount++;if(this.instructionCount>this.options.instructionLimit)throw new VBError(`Instruction budget exceeded (${this.options.instructionLimit.toLocaleString()}); execution stopped`,7);
+    this.instructionCount++;
     if(this.breakpoints.size||this.stepMode||this.runTarget||this.watchpoints.length||this.pauseRequested)await this.debugger.checkpoint(ins,frame);
     const now=performance.now();if(now-this.lastYield>=this.options.sliceMilliseconds){await new Promise(resolve=>setTimeout(resolve,0));this.lastYield=performance.now();if(this.state==='stopped')throw new StopExecution();}
   }
